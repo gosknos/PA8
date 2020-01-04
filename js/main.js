@@ -306,7 +306,7 @@
 		counter();
 		counterWayPoint();
 		parallax();
-		owlCrouselFeatureSlide();x
+		owlCrouselFeatureSlide();
 	});
 
 
