@@ -69,11 +69,13 @@
 						<div class="col-xs-10 text-right menu-1">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li class="has-dropdown active">
-									<a href="work.html">Product</a>
+								<li class="has-dropdown">
+									<a href="work.html">Projects</a>
 									<ul class="dropdown">
 										<li><a href="#">Commercial</a></li>
 										<li><a href="#">Apartment</a></li>
+										<li><a href="#">House</a></li>
+										<li><a href="#">Building</a></li>
 									</ul>
 								</li>
 								<li class="active"><a href="connexion.php">Connectez vous</a></li>
@@ -89,14 +91,14 @@
 		<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="background-image: url(images/img_bg_3.jpg);">
+			   	<li style="background-image: url(images/img_bg_2.jpg);">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
 				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 				   				<div class="slider-text-inner text-center">
-				   					<h2>Secret of Our Success</h2>
-				   					<h1>Our Projects</h1>
+				   					<h2>What We Do?</h2>
+				   					<h1>Our Services</h1>
 				   				</div>
 				   			</div>
 				   		</div>
@@ -106,137 +108,132 @@
 		  	</div>
 		</aside>
 
-		<div id="colorlib-project">
+		<div id="colorlib-services">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 animate-box">
-						<div class="item item-2">
-							<a href="images/building-1.jpg" class="project image-popup-link" style="background-image: url(images/building-1.jpg);">
-								<div class="desc-t">
-									<div class="desc-tc">
-										<div class="desc">
-											<h3><span><small>1</small></span> California Mega Mall</h3>
-											<p>Even the all-powerful Pointing has no control</p>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-engineer"></i>
+							</span>
+							<div class="desc">
+								<h3>General Constructing</h3>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-engineering"></i>
+							</span>
+							<div class="desc">
+								<h3>Building Modeling</h3>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-skyline"></i>
+							</span>
+							<div class="desc">
+								<h3>Design Build</h3>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-crane"></i>
+							</span>
+							<div class="desc">
+								<h3>Construction Services</h3>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-sketch"></i>
+							</span>
+							<div class="desc">
+								<h3>Pre-Construction Design</h3>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-conveyor"></i>
+							</span>
+							<div class="desc">
+								<h3>Construction Management</h3>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-testimony" class="colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 animate-box colorlib-heading animate-box">
+						<span class="sm">Testimonial</span>
+						<h2><span class="thin">What Our</span> <span class="thick">Client Says</span></h2>
+					</div>
+					<div class="col-md-7 col-md-push-1">
+						<div class="row animate-box">
+							<span class="icon"><i class="icon-quotes-left"></i></span>
+							<div class="owl-carousel1">
+								<div class="item">
+									<div class="testimony-slide active">
+										<div class="testimony-wrap">
+											<figure>
+												<img src="images/person1.jpg" alt="user">
+											</figure>
+											<blockquote>
+												<span>Andrew Field</span>
+												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+											</blockquote>
 										</div>
 									</div>
 								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="item item-2">
-							<a href="images/building-2.jpg" class="project image-popup-link" style="background-image: url(images/building-2.jpg);">
-								<div class="desc-t">
-									<div class="desc-tc">
-										<div class="desc">
-											<h3><span><small>1</small></span> California Mega Mall</h3>
-											<p>Even the all-powerful Pointing has no control</p>
+								<div class="item">
+									<div class="testimony-slide active">
+										<div class="testimony-wrap">
+											<figure>
+												<img src="images/person2.jpg" alt="user">
+											</figure>
+											<blockquote>
+												<span>Mark Bubble</span>
+												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+											</blockquote>
 										</div>
 									</div>
 								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="item item-2">
-							<a href="images/building-3.jpg" class="project image-popup-link" style="background-image: url(images/building-3.jpg);">
-								<div class="desc-t">
-									<div class="desc-tc">
-										<div class="desc">
-											<h3><span><small>3</small></span> California Mega Mall</h3>
-											<p>Even the all-powerful Pointing has no control</p>
+								<div class="item">
+									<div class="testimony-slide active">
+										<div class="testimony-wrap">
+											<figure>
+												<img src="images/person3.jpg" alt="user">
+											</figure>
+											<blockquote>
+												<span>Adam Smith</span>
+												<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+											</blockquote>
 										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="item item-2">
-							<a href="images/building-4.jpg" class="project image-popup-link" style="background-image: url(images/building-4.jpg);">
-								<div class="desc-t">
-									<div class="desc-tc">
-										<div class="desc">
-											<h3><span><small>4</small></span> California Mega Mall</h3>
-											<p>Even the all-powerful Pointing has no control</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="item item-2">
-							<a href="images/building-5.jpg" class="project image-popup-link" style="background-image: url(images/building-5.jpg);">
-								<div class="desc-t">
-									<div class="desc-tc">
-										<div class="desc">
-											<h3><span><small>5</small></span> California Mega Mall</h3>
-											<p>Even the all-powerful Pointing has no control</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="item item-2">
-							<a href="images/building-6.jpg" class="project image-popup-link" style="background-image: url(images/building-6.jpg);">
-								<div class="desc-t">
-									<div class="desc-tc">
-										<div class="desc">
-											<h3><span><small>6</small></span> California Mega Mall</h3>
-											<p>Even the all-powerful Pointing has no control</p>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- <div class="col-md-7 col-md-push-1">
-						<div class="row">
-							<div class="col-md-12 animate-box">
-								<div class="owl-carousel owl-carousel2 project-wrap">
-									<div class="item">
-										<a href="images/building-1.jpg" class="project image-popup-link" style="background-image: url(images/building-1.jpg);">
-											<div class="desc-t">
-												<div class="desc-tc">
-													<div class="desc">
-														<h3><span><small>1</small></span> California Mega Mall</h3>
-														<p>Even the all-powerful Pointing has no control</p>
-													</div>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item">
-										<a href="images/building-2.jpg" class="project image-popup-link" style="background-image: url(images/building-2.jpg);">
-											<div class="desc-t">
-												<div class="desc-tc">
-													<div class="desc">
-														<h3><span><small>2</small></span> Commercial Building</h3>
-														<p>Even the all-powerful Pointing has no control</p>
-													</div>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item">
-										<a href="images/building-3.jpg" class="project image-popup-link" style="background-image: url(images/building-3.jpg);">
-											<div class="desc-t">
-												<div class="desc-tc">
-													<div class="desc">
-														<h3><span><small>3</small></span> Miami Private Apartment</h3>
-														<p>Even the all-powerful Pointing has no control</p>
-													</div>
-												</div>
-											</div>
-										</a>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div> -->
+					</div>
 				</div>
 			</div>
 		</div>
