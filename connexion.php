@@ -71,11 +71,12 @@
 								<li class="has-dropdown">
 									<a href="work.html">Produit</a>
 									<ul class="dropdown">
-										<li><a href="#">Ruche connectée</a></li>
+										<li><a href="#">Commercial</a></li>
+										<li><a href="#">Apartment</a></li>
 									</ul>
 								</li>
 								<li class="active"><a href="connexion.php">Connectez vous</a></li>
-								<li><a href="blog.html">Forum</a></li>
+								<li><a href="blog.html">Blog</a></li>
 								<li><a href="about.html">Notre équipe</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
@@ -140,12 +141,43 @@
 								</div>
 						</div>
 					</div>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-crane"></i>
+							</span>
+							<div class="desc">
+								<h3>Construction Services</h3>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-sketch"></i>
+							</span>
+							<div class="desc">
+								<h3>Pre-Construction Design</h3>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-conveyor"></i>
+							</span>
+							<div class="desc">
+								<h3>Construction Management</h3>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+								</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 
-
-        <!--
 		<div id="colorlib-testimony" class="colorlib-light-grey">
 			<div class="container">
 				<div class="row">
@@ -202,34 +234,35 @@
 				</div>
 			</div>
 		</div>
-        -->
-        <div id="colorlib-subscribe">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-md-offset-0 colorlib-heading animate-box">
-                        <h2>Inscrivez-vous à notre Newsletter</h2>
-                        <div class="row">
-                            <div class="col-md-7">
-                                <p>Entrez votre adresse mail pour recevoir nos actualités et nos offres spéciales</p>
-                            </div>
-                            <div class="col-md-5">
-                                <form class="form-inline qbstp-header-subscribe">
-                                    <div class="row">
-                                        <div class="col-md-12 col-md-offset-0">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="email" placeholder="Entrez votre Email">
-                                                <button type="submit" class="btn btn-primary">S'ABONNER</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+	
+		<div id="colorlib-subscribe">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 colorlib-heading animate-box">
+						<h2>Sign up for a Newsletter</h2>
+						<div class="row">
+							<div class="col-md-7">
+								<p>Enter your email address to get the latest news, events and special offers delivered right to your inbox.</p>
+							</div>
+							<div class="col-md-5">
+								<form class="form-inline qbstp-header-subscribe">
+									<div class="row">
+										<div class="col-md-12 col-md-offset-0">
+											<div class="form-group">
+												<input type="text" class="form-control" id="email" placeholder="Enter your email">
+												<button type="submit" class="btn btn-primary">Subscribe</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
         <footer id="colorlib-footer" role="contentinfo">
             <div class="container">
                 <div class="row row-pb-md">
