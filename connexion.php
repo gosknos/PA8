@@ -110,7 +110,7 @@
 				<div class="row">
 					
 					
-					
+				
     				<form method="post" action="cible.php">
  
         				<p>
@@ -131,7 +131,7 @@
             			<div class="row form-group">
             				<div class="col-md-6">
             				<label for="mdp">Confirmez votre mot de passe :</label>
-            				<input type="password" name="mdpa" class="form-control" />
+            				<input type="password" name="mdpb" class="form-control" />
             				</div>
             			</div>
 
