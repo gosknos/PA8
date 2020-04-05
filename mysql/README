@@ -1,0 +1,15 @@
+**** Création de la base de donnée mysql ****
+ 1. Si vous n'avez pas encore créé la base de donnée sur mysql, il vous suffit d'importer le fichier .sql
+ 
+ 2. Si votre base de donnée est déjà existante, commencer par retirer les accents de 'température' et de 'humidité' dans la table 'mesure'
+ (les accents on posé problème pour mettre les données sur le serveur php)
+ 
+ 3. Allez sur votre table 'mesure' puis sur importer puis:
+    -> choisissez votre fichier .csv
+    -> réglez le format sur CSV
+    -> réglez 'Colonnes séparées par :' sur: ;
+    -> réglez 'Colonnes entourées par :' sur: "
+    -> réglez 'Colonnes échappées avec :' sur: \n
+    -> Executez
+    
+Votre base de donnée est remplie :)
