@@ -1,0 +1,10 @@
+**** Mise en place du serveur mysql avec WAMP ***
+
+Mettez d'abord en place votre base de donnée mysql si cela n'est pas encore fait (lien ci-dessous)
+https://github.com/gosknos/PA8/tree/master/mysql
+
+1. Copiez le fichier .php dans: C:\wamp64\www   (ou l'équivalent)
+2. lancer votre serveur Wamp
+3. aller à http://localhost/databee.php
+
+Voilà, les données Json devraient être affichées et votre serveur est lancé :)
