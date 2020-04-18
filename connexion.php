@@ -1,4 +1,8 @@
-<!DOCTYPE HTML>
+<?php
+	session_start();
+?>
+
+	<!DOCTYPE HTML>
 <html>
 	<head>
 	<meta charset="utf-8">
@@ -64,21 +68,36 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-2">
-							<div id="colorlib-logo"><a href="index.html">Bee Live</a></div>
+							<div id="colorlib-logo"><a href="index.php">Bee Live</a></div>
 						</div>
 						<div class="col-xs-10 text-right menu-1">
 							<ul>
 								<li class="has-dropdown">
-									<a href="work.html">Produit</a>
-									<ul class="dropdown">
+									<a href="work.php">Produit</a>
+									<!--<ul class="dropdown">
 										<li><a href="#">Commercial</a></li>
 										<li><a href="#">Apartment</a></li>
-									</ul>
+									</ul> -->
 								</li>
+								<?php
+									if (isset($_SESSION['userid']))
+										{
+								?>
+								<li id="services"><a href="membre.php">Bienvenue <?php echo $_SESSION['userid'];?></a></li>
+								<?php
+										}
+									else
+									{
+								?>
+
 								<li class="active"><a href="connexion.php">Connectez vous</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="about.html">Notre équipe</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<?php
+									}
+								?>
+								<li><a href="blog.php">Blog</a></li>
+								<li><a href="about.php">Notre équipe</a></li>
+								<li><a href="contact.php">Contact</a></li>
+								<li><a href="inscription.php">Inscription</a></li>
 							</ul>
 						</div>
 					</div>
@@ -95,7 +114,7 @@
 				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 				   				<div class="slider-text-inner text-center">
 				   					<h2>Lets join us!</h2>
-				   					<h1>Create your account!</h1>
+				   					<h1>Accédez à votre espace!</h1>
 				   				</div>
 				   			</div>
 				   		</div>
@@ -111,7 +130,7 @@
 					
 					
 				
-    				<form method="post" action="cible.php">
+    				<form method="post" action="cibleC.php">
  
         				<p>
         				<div class="row form-group">
@@ -125,13 +144,6 @@
             				<div class="col-md-6">
             				<label for="mdp">Votre mot de passe :</label>
             				<input type="password" name="mdpa" class="form-control"/>
-            				</div>
-            			</div>
-
-            			<div class="row form-group">
-            				<div class="col-md-6">
-            				<label for="mdp">Confirmez votre mot de passe :</label>
-            				<input type="password" name="mdpb" class="form-control" />
             				</div>
             			</div>
 
