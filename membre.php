@@ -55,6 +55,10 @@ session_start();
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript" src="js/JAXchart.js"></script>
+
 	</head>
 	<body>
 		
@@ -80,7 +84,9 @@ session_start();
 								<?php
 									if (isset($_SESSION['userid']))
 										{
+											
 								?>
+								
 								<li id="active"><a href="membre.php">Bienvenue <?php echo $_SESSION['userid'];?></a></li>
 								<?php
 										}
@@ -112,7 +118,6 @@ session_start();
 			   			<div class="row">
 				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 				   				<div class="slider-text-inner text-center">
-				   					<h2>bite</h2>
 				   					<h1>BEE LIVE</h1>
 				   				</div>
 				   			</div>
@@ -150,272 +155,35 @@ session_start();
 		  	</div>
 		</aside>
 
-		<div id="colorlib-intro">
+		<div id="colorlib-contact">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4 col-md-push-4 animate-box colorlib-heading animate-box">
-						<span class="sm">Bienvenue !</span>
-						<h2><span class="thin">Notre motivation</span> <span class="thick">pour les abeilles</span></h2>
-					</div>
-					<div class="col-md-4 col-md-pull-4 animate-box">
-						<div class="box text-center">
-							<span class="num">30</span>
-							<span class="yr">%</span>
-							<!--<span class="thin">Experience</span>-->
-						</div>
-					</div>
-					<div class="col-md-4 animate-box">
-						<p>En France, environ 30 % des colonies d’abeilles disparaissent chaque année. Cette disparition pourrait entraîner de lourdes conséquences sur notre écosystème. Changement climatique, exploitation excessive et la pollution participent à cette disparition.</p>
+					<div class="col-md-10 col-md-offset-1 animate-box">
+						<h2>Température</h2>
+						<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+						<h2>Humidité</h2>
+						<div id="chartHumidite" style="height: 300px; width: 100%;"></div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<?php
+		if (isset($_SESSION['userid']))
+		{
+			?>
+
+			<a href="PA8_visualisation.php"><h3>Plus d'informations</h3></a>
 
 		
-		<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_img_1.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-				</div>
-				<div class="row">
-					<div class="col-md-3 text-center animate-box">
-						<span class="icon"><i class="flaticon-project-management"></i></span>
-						<span class="colorlib-counter js-counter" data-from="0" data-to= "1" data-speed="2000" data-refresh-interval="5"></span>
-						<span class="colorlib-counter-label">Projet</span>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<span class="icon"><i class="flaticon-education"></i></span>
-						<span class="colorlib-counter js-counter" data-from="0" data-to="8" data-speed="2000" data-refresh-interval="5"></span>
-						<span class="colorlib-counter-label">Étudiants</span>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<span class="icon"><i class="flaticon-bee-box"></i></span>
-						<span class="colorlib-counter js-counter" data-from="0" data-to="1" data-speed="2000" data-refresh-interval="5"></span>
-						<span class="colorlib-counter-label">Produit</span>
-					</div>
-					<div class="col-md-3 text-center animate-box">
-						<span class="icon"><i class="flaticon-population"></i></span>
-						<span class="colorlib-counter js-counter" data-from="0" data-to="2" data-speed="2000" data-refresh-interval="5"></span>
-						<span class="colorlib-counter-label">Partenaires</span>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div id="colorlib-services" class="colorlib-light-grey">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 animate-box colorlib-heading animate-box">
-						<span class="sm">Ce que nous proposons</span>
-						<h2><span class="thin">Une ruche</span> <span class="thick">Connectée</span></h2>
-						<p>Notre ruche connectée permet de surveiller à distance vos abeilles grâce à différents capteurs pour connaître en temps réel les conditions climatiques. </p>
-					</div>
-					<div class="col-md-8">
-						<div class="row">
-							<div class="wrap">
-								<div class="col-md-6 animate-box">
-									<div class="services">
-										<span class="icon">
-											<i class="flaticon-thermometer"></i>
-										</span>
-										<div class="desc">
-											<h3>Température</h3>
-											<p>Un suivi en temps réel de la température dans la ruche</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="services">
-										<span class="icon">
-											<i class="flaticon-humidity"></i>
-										</span>
-										<div class="desc">
-											<h3>Humidité</h3>
-											<p>Une Surveillance de l'humidité a l'intérieur de la ruche</p>
-											</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="services">
-										<span class="icon">
-											<i class="flaticon-population"></i>
-										</span>
-										<div class="desc">
-											<h3>Population</h3>
-											<p>Un recensement de la population d'abeille à l'aide de capteur</p>
-											</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="services">
-										<span class="icon">
-											<i class="flaticon-place"></i>
-										</span>
-										<div class="desc">
-											<h3>Localisation</h3>
-											<p>Un service anti-vol intégré</p>
-											</div>
-									</div>
-								</div>
-								<!--
-								<div class="col-md-6 animate-box">
-									<div class="services">
-										<span class="icon">
-											<i class="flaticon-sketch"></i>
-										</span>
-										<div class="desc">
-											<h3>Pre-Construction Design</h3>
-											<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
-											</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="services">
-										<span class="icon">
-											<i class="flaticon-conveyor"></i>
-										</span>
-										<div class="desc">
-											<h3>Construction Management</h3>
-											<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
-											</div>
-									</div>
-								</div>
-								-->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php
+		}
+		?>
+		
 
 		
-		<div id="colorlib-about">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-md-push-8 animate-box colorlib-heading animate-box">
-						<span class="sm">Team</span>
-						<h2><span class="thin">Élèves</span> <span class="thick">Ingénieurs</span></h2>
-						<p>Équipe de huit élèves ingénieurs en 4ème année à l'EFREI Paris, soucieux de l'environnement, nous avons décidés de venir en aide aux abeilles.</p>
-					</div>
-					<div class="col-md-8 col-md-pull-4">
-						<div class="row">
-							<div class="wrap-2">
-								<div class="col-md-6 text-center animate-box">
-									<!--<div class="staff" class="staff-img" style="background-image: url(images/person1.jpg);">
-										<a href="#" class="desc">
-											<h3>John Miller</h3>
-											<span>Lead Engineer</span>
-											<div class="parag">
-												<p>Even the all-powerful Pointing has no control about the blind texts</p>
-											</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-6 text-center animate-box">
-									<div class="staff" class="staff-img" style="background-image: url(images/person2.jpg);">
-										<a href="#" class="desc">
-											<h3>Brian Smith</h3>
-											<span>Architect</span>
-											<div class="parag">
-												<p>Even the all-powerful Pointing has no control about the blind texts</p>
-											</div> -->
-
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--
-		<div id="colorlib-testimony" class="colorlib-light-grey">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 animate-box colorlib-heading animate-box">
-						<span class="sm">Testimonial</span>
-						<h2><span class="thin">What Our</span> <span class="thick">Client Says</span></h2>
-					</div>
-					<div class="col-md-7 col-md-push-1">
-						<div class="row animate-box">
-							<span class="icon"><i class="icon-quotes-left"></i></span>
-							<div class="owl-carousel1">
-								<div class="item">
-									<div class="testimony-slide active">
-										<div class="testimony-wrap">
-											<figure>
-												<img src="images/person1.jpg" alt="user">
-											</figure>
-											<blockquote>
-												<span>Andrew Field</span>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-											</blockquote>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-slide active">
-										<div class="testimony-wrap">
-											<figure>
-												<img src="images/person2.jpg" alt="user">
-											</figure>
-											<blockquote>
-												<span>Mark Bubble</span>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-											</blockquote>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-slide active">
-										<div class="testimony-wrap">
-											<figure>
-												<img src="images/person3.jpg" alt="user">
-											</figure>
-											<blockquote>
-												<span>Adam Smith</span>
-												<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-											</blockquote>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		-->
-		<!--
-		<div id="colorlib-subscribe">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 col-md-offset-0 colorlib-heading animate-box">
-						<h2>Sign up for a Newsletter</h2>
-						<div class="row">
-							<div class="col-md-7">
-								<p>Enter your email address to get the latest news, events and special offers delivered right to your inbox.</p>
-							</div>
-							<div class="col-md-5">
-								<form class="form-inline qbstp-header-subscribe">
-									<div class="row">
-										<div class="col-md-12 col-md-offset-0">
-											<div class="form-group">
-												<input type="text" class="form-control" id="email" placeholder="Enter your email">
-												<button type="submit" class="btn btn-primary">Subscribe</button>
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		-->
+		
 		<footer id="colorlib-footer" role="contentinfo">
 			<div class="container">
 				<div class="row row-pb-md">
